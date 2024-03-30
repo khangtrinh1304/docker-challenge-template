@@ -16,7 +16,7 @@ Through this project, I gained insight into containerization basics as well as D
 6. Test the application to verified the application by accessing "http://localhost:8080" and ensuring that my "index.html" was displayed correctly.
 7. After my challenge had been successfully completed I screenshot terminal and result.
 
-# Step I taken to finished this challenge 2
+# Step I take to finished this challenge 2
 1. I downloaded challenge2 zip folder and saved it onto my computer from D2L.
 2. I extracted all the files from the zip file and placed them within my challenge2 directory.
 3. I created a Dockerfile within the directory and included any necessary code necessary for building my container.
@@ -26,3 +26,6 @@ Through this project, I gained insight into containerization basics as well as D
 7. My initial docker-compose up --build run produced errors. After realizing there were conflicts, I stopped the previous server running before restarting this command in Docker Desktop.
 8. After much effort and struggle, I finally managed to correct the code. First I used docker-compose down before rebuilding with docker-compose up --build. Finally I received notification that my server was now operating on port 3000.
 9. After my challenge had been successfully completed, I opened my browser and entered localhost:3000/api/books into it to see if my challenge had succeeded and screenshot terminal and result.
+
+# Conclusion and Summary
+This challenge is really useful for me. I learned a lot through this challenge. It helps me understand more about this Docker software and will be an important tool for me
