@@ -39,5 +39,17 @@ Through this project, I gained insight into containerization basics as well as D
 9. After making these fixes, I successfully rebuilt the containers using "docker-compose up --build" and observed that my server had started functioning normally on port 8080 as intended.
 10. At last, I verified the functionality of the full stack by visiting "localhost:8080/api/books" and "localhost:8080/api/books/1" in my browser to make sure it was serving data properly.
 11. After my challenge had been successfully completed, screenshot terminal and result to documented my step for challenge.
+
+# Step I took to finished this challenge 4
+1. I started with the "challenge3" setup, which I had previously configured and validated. This setup included a pre-configured Docker environment with a Nginx web server, a Node.js application, and a MariaDB database.
+2. My initial task was to confirm the operation of an existing single instance of node-service. Using my browser, I made several GET requests to "http://localhost:8080/api/stats" and noted that every response consistently returned the same hostname; an indicator that only one instance was managing my requests.
+3. My goal next was to expand node-service from one to three instances without further configuration changes, using Docker Compose commands as appropriate to scale services. After researching suitable commands I discovered one to scale services without altering configuration files directly.
+4. I executed the command "docker-compose up -d --scale node-service=3"
+5. Once scaled, I repeated my GET requests to "http://localhost:8080/api/stats" and observed various hostnames appearing in responses indicating that requests were being distributed among new scaled instances.
+6. To validate my scaling solution, I ran "docker-compose ps". This displayed all active instances and confirmed that all three instances of node-service were running successfully.
+7. Finally, repeatedly testing the system by accessing its /api/stats endpoint has demonstrated how successfully load-balancing mechanism was distributed requests across different instances; showing off its practical applications of scalability.
+8. After my challenge had been successfully completed, screenshot terminal and result to documented my step for challenge.
+
+
 # Conclusion and Summary
 This challenge is really useful for me. I learned a lot through this challenge. It helps me understand more about this Docker software and will be an important tool for me
